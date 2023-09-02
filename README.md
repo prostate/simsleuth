@@ -27,6 +27,7 @@ https://github.com/prostate/simsleuth/assets/803285/6ec9429b-ee37-47ce-9af9-7f91
 - Raw HTML Requests (Zero Mid-lenium)
 - Proxy Support
 - Automated Email & Phone Doxxing via [Snusbase](https://snusbase.com)
+- Automated Phone Carrier Lookup (e.g., T-Mobile, AT&T, Verizon)
 - Telegram Logging
 - Very Fast & Easy to use (Thanks Telegram)
 
