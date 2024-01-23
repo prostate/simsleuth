@@ -2,11 +2,10 @@
 
 **Reconnaissance tool designed to identify Twitter accounts vulnerable to sim-swap attacks.**
 
-![TWMobile](https://i.imgur.com/nh6xna9.png)
+![simsleuth](https://i.imgur.com/nh6xna9.png)
 
 **[Setup](#setup)**
 ・**[Demo](#demo)**
-・**[Features](#features)**
 ・**[Goals](#goals)**
 
 *Please note that this project is a work in progress. Refer to the [goals section below](#goals).*
@@ -21,66 +20,38 @@
 ### Demo
 https://github.com/prostate/simsleuth/assets/803285/6ec9429b-ee37-47ce-9af9-7f915e23e5e4
 
-
-
-### Features
-- Raw HTML Requests (Zero Mid-lenium)
-- Proxy Support
-- Automated Email & Phone Doxxing via [Snusbase](https://snusbase.com)
-- Automated Phone Carrier Lookup (e.g., T-Mobile, AT&T, Verizon)
-- Telegram Logging
-- Very Fast & Easy to use (Thanks Telegram)
-
 ### Goals
 - Implement doxx pre-check to avoid "Further verification needed"
 - Provide Twitter Account Interaction Statistics
-- ~~Automate Phone Carrier Lookup (e.g., T-Mobile, AT&T, Verizon)~~ - Done.
-- Develop an Algorithm for Account Harvesting to Minimize Manual Work
+- Automate Phone Carrier Lookup (e.g., T-Mobile, AT&T, Verizon)
 - Enhance Autodoxxing capabilities using [IntelX](https://intelx.io)
 
 ### Setup
-> **Warning**
->
-> Setup section is currently inaccurate & filled with placeholders.
-Use any server, preferably Debian or Ubuntu.
 
 To get started, clone the repository:
 
 ```sh
-git clone https://github.com/prostate/twmobile
-cd twmobile
+git clone https://github.com/prostate/simsleut && cd simsleuth
 ```
 
-Then install the required dependencies:
+Fill in the `config.toml` file with the necessary information:
+
+```toml
+[telegram]
+token = "YOUR_TELEGRAM_BOT_TOKEN"
+
+[web]
+proxy_url="http://user:password@ip:port"
+```
+
+Then:
 
 ```sh
-pip install -r requirements.txt
+pip3 install telebot toml rich requests
 ```
-
-Fill in the `.env` file with the necessary information:
-
 ```sh
-TELEGRAMTOKEN=your_bot_token_here
-TELEGRAMCHATID=your_chatid_here
-SNUSBASEAPIKEY=your_snusbase_api_key
-ROTATINGPROXY=http://username:password@ip:port
+python3 svc.py
 ```
-
-Next, run the tool using tmux and then disconnect from the server:
-
-```sh
-tmux
-```
-
-```sh
-python3 manager.py
-```
-
-```sh
-ctrl-b + d
-```
-
 
 ## Acknowledgments
 * [ZachXBT](https://twitter.com/zachxbt) (aka fed): For inspiring this project
-* [Snusbase](https://snusbase.com/): Provider of the necessary DBs for Doxxing and their API
