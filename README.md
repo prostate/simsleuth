@@ -18,7 +18,7 @@
 ![zach](https://pbs.twimg.com/media/F4N0t25WYAA4ca7?format=jpg&name=large)
 
 ### Demo
-https://github.com/prostate/simsleuth/assets/803285/6ec9429b-ee37-47ce-9af9-7f915e23e5e4
+https://github.com/prostate/simsleuth/assets/803285/6d6dbc28-5efd-4a07-87c8-9c2ea89ff225
 
 ### Goals
 - Implement doxx pre-check to avoid "Further verification needed"
