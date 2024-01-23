@@ -19,13 +19,13 @@ def load_config(file_path="config.toml"):
         telegram_token = config["telegram"]["token"]
         proxy_url = config["web"]["proxy_url"]
 
-        return telegram_token, telegram_chat_id, proxy_url
+        return telegram_token, proxy_url
 
     except Exception as e:
         log.error(f"Error loading config: {e}")
         return None, None, None
 
-telegram_token, telegram_chat_id, proxy_url = load_config()
+telegram_token, proxy_url = load_config()
 
 log.info(f"Loaded Token: {telegram_token}")
 log.info(f"Loaded Proxy URL: {proxy_url}")
