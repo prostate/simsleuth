@@ -31,7 +31,7 @@ https://github.com/prostate/simsleuth/assets/803285/6ec9429b-ee37-47ce-9af9-7f91
 To get started, clone the repository:
 
 ```sh
-git clone https://github.com/prostate/simsleut && cd simsleuth
+git clone https://github.com/prostate/simsleuth && cd simsleuth
 ```
 
 Fill in the `config.toml` file with the necessary information:
