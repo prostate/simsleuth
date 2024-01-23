@@ -4,6 +4,8 @@
 
 ![simsleuth](https://i.imgur.com/nh6xna9.png)
 
+> [!IMPORTANT]  
+> Simsleuth is already setup on an existing Telegram Bot [Here](https://t.me/simsleuthbot).
 **[Setup](#setup)**
 ・**[Demo](#demo)**
 ・**[Goals](#goals)**
